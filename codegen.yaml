@@ -1,0 +1,16 @@
+overwrite: true
+schema: functions/gql.graphqls
+generates:
+  functions/src/gql.d.ts:
+    config:
+      useIndexSignature: true
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+
+  src/api/gql.d.ts:
+    config:
+      useIndexSignature: true
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
