@@ -30,7 +30,7 @@ function AdminPage() {
         setLoading(false);
       });
     }
-  }, []);
+  }, [user]);
 
   return (
     <VStack width="full" height="full">
